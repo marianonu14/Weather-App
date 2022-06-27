@@ -8,3 +8,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media (max-width: 767.98px) {
+    .btn {
+        min-width: 100%;
+    }
+ }
