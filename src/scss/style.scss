@@ -1,9 +1,10 @@
-@import "../../node_modules/bootstrap/scss/bootstrap";
+// Variables
 
+//Styles
 
 .root {
     height: 100vh;
-    background-image: url(../img/img1.png);
+    background-image: url(../img/img1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,3 +15,8 @@
         min-width: 100%;
     }
  }
+
+ //Bootstrap
+
+ @import "../../node_modules/bootstrap/scss/bootstrap";
+
