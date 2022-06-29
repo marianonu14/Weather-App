@@ -12,7 +12,7 @@ module.exports = {
     }),
   ],
   output: {
-    filename: 'bundle.js',
+    filename: '[name][contenthash].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
