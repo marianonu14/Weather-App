@@ -47,16 +47,16 @@ function showData(name,state,temp,temp_max,temp_min,humidity){
     stateContent.textContent = state;
 
     const tempContent = document.createElement('p');
-    tempContent.textContent = temp;
+    tempContent.textContent = `Temp: ${temp}°`;
 
     const tempMaxContent = document.createElement('p');
-    tempMaxContent.textContent = temp_max;
+    tempMaxContent.textContent = `Max: ${temp_max}°`;
 
     const tempMinContent = document.createElement('p');
-    tempMinContent.textContent = temp_min;
+    tempMinContent.textContent = `Min: ${temp_min}°`;
 
     const humidityContent = document.createElement('p');
-    humidityContent.textContent = humidity;
+    humidityContent.textContent = `Humidty: ${humidity}%`;
 
     dataContainer.appendChild(nameContent);
     dataContainer.appendChild(stateContent);
@@ -64,12 +64,12 @@ function showData(name,state,temp,temp_max,temp_min,humidity){
     dataContainer.appendChild(tempMaxContent);
     dataContainer.appendChild(tempMinContent);
     dataContainer.appendChild(humidityContent);
-
 }
 
 function showError(){
     const errorMessage = document.createElement('p');
     errorMessage.textContent = 'City Not Found';
+    errorMessage.classList.add('bg-danger', 'rounded', 'py-2');
 
     dataContainer.appendChild(errorMessage);
 }

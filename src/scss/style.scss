@@ -3,10 +3,18 @@
 //Styles
 .root {
     height: 100vh;
+    max-height: 100vh;
     background-image: linear-gradient(transparentize(#baa3a3, .9%)  20%, #baa3a3 100%) , url(../img/img1.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+p {
+    background-color: rgb(58, 125, 184);
+    font-size: 1rem;
+    padding: 0.4rem;
+    border-radius: 0.8rem;
 }
 
 @media (max-width: 767.98px) {
